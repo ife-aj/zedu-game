@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111710">
+  <meta name="description" content="A quick arcade escape. Dodge the blocks, chase the coins, and run as your start.ng character.">
+  <title>Zedu Dash — One more run.</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./game.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="./">Z<span>↗</span> ZEDU DASH</a><span class="edition">THE QUICK BREAK ARCADE / 001</span><a id="signin">Sign in with start.ng ↗</a></header>
+  <main>
+    <section class="intro"><p class="eyebrow"><span></span> SMALL GAME. BIG REFLEXES.</p><h1>Stay sharp.<br>Keep <em>moving.</em></h1><p>Three lanes. No second chances.<br>Dodge the blocks, chase the gold, beat your best.</p><div class="profile"><div id="portrait">↗</div><div><strong id="player-name">Guest</strong><small id="account">Your next personal best starts here.</small></div></div><div class="instructions"><div><kbd>←</kbd><kbd>→</kbd><span>Switch lanes</span></div><div><kbd>P</kbd><span>Pause your run</span></div><p>On mobile? Tap the arrows or swipe the track.</p></div><div class="legend"><span><i class="coin"></i> GOLD = +25</span><span><i class="block"></i> BLOCK = GAME OVER</span></div></section>
+    <section class="arcade" aria-label="Zedu Dash game">
+      <div class="scorebar"><div><span>SCORE</span><strong id="score">0000</strong></div><div><span>BEST · THIS DEVICE</span><strong id="best">0000</strong></div><button id="pause" aria-label="Pause game" disabled>Ⅱ</button></div>
+      <div class="stage"><canvas id="game" width="480" height="600" aria-label="Three lane obstacle dodging game"></canvas><div id="overlay"><p id="overlay-label" class="eyebrow">READY WHEN YOU ARE</p><h2 id="overlay-title">One more run.</h2><p id="overlay-copy">Find your rhythm.<br>Then see how far it takes you.</p><button id="play">LET’S DASH <span>↗</span></button><small id="result">Move with ← → or swipe</small></div><div class="live-tag">● <span id="status">READY TO RUN</span></div></div>
+      <div class="controls"><button id="left" aria-label="Move left">← <span>LEFT</span></button><span>QUICK FEET. CLEAR MIND.</span><button id="right" aria-label="Move right"><span>RIGHT</span> →</button></div>
+    </section>
+  </main>
+  <footer><span>BUILT FOR THE “JUST ONE MORE” CROWD.</span><span>YOUR CHARACTER. YOUR HIGH SCORE. <b>start.ng ↗</b></span></footer>
+</body>
+</html>
